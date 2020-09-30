@@ -252,11 +252,34 @@ h3{
     box-sizing: border-box;
 }
 .submit{
-    width: 100%;
+    width: 60%;
     background-color: #064260;
     color: white;
-    padding: 14px 20px;
+    padding: 7px 20px;
     margin: 8px 0px;
     border-radius: 5px;
+    float: right;
     cursor: pointer;
+}
+.form_vol{
+    width: 30%;
+    top: 0px;
+    right: 0px;
+    position: fixed;
+    background-color: white;
+    border: 2px solid gray;
+    padding: 10px;
+    display: none;
+}
+.btn_close{
+    background-color: darkred;
+    width: 90px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    border: darkred;
+}
+.require{
+    color: red;
+    
 }
