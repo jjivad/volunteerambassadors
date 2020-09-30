@@ -31,7 +31,7 @@
                         Name: <b>Tkiyet Um Ali</b> &emsp; Website: <a href="https://www.tua.jo/ar/" target="_blank">www.tua.jo</a>
                     </div>                    
                     Tkiyet Um Ali receives volunteers from various parts of the Kingdom of different ages and various private, governmental, educational and other sectors every day, eager to do good and provide a helping hand to others. Since 2014, Tkiyet Um Ali has received more than 40,000 volunteers, all of whom have contributed to the support of society in general and members of the families of Tkiyet Um Ali specifically accredited in ways that go beyond food support to include preserving human dignity and helping improve their living conditions and psychological as much as possible. Tkiyet Um Ali focuses on the importance of volunteering in Jordan through its launch of 16 different volunteer programs.                    
-                    <a href="volunteer_form.html"><button class="but_opp">Apply to Volunteer</button></a>
+                    <button class="but_opp" onclick="openForm()">Apply to Volunteer</button>
                 </div>                
             </div>
             
@@ -47,7 +47,7 @@
                     <p></p>
                     <b><u>Volunteer Opportunities</u></b>: Donation, Fundraising, Volunteer, Deployments
                     
-                    <a href="volunteer_form.html"><button class="but_opp">Apply to Volunteer</button></a>
+                    <button class="but_opp" onclick="openForm()">Apply to Volunteer</button>
                 </div>                
             </div>
             
@@ -62,7 +62,7 @@
                     The United Nations Voluntary Program encourages voluntary service to support peace and development around the world. The idea of the United Nations Volunteer Program is inspired by the conviction that volunteerism can transform the pace and nature of development, and by the idea that everyone can contribute their time and energy to peace and development. With partners such as UNHCR, the United Nations Volunteer Program encourages volunteer service, integrates it into development planning and mobilizes volunteers.
                     <p></p>
                     <b><u>Volunteer Opportunities</u></b>: Donation, Fundraising, Volunteer, Deployments                    
-                    <a href="volunteer_form.html"><button class="but_opp">Apply to Volunteer</button></a>
+                    <button class="but_opp" onclick="openForm()">Apply to Volunteer</button>
                 </div>                
             </div>
             
@@ -93,10 +93,79 @@
                    The Jordan National Red Crescent Society Mission is to “alleviate the suffering of the vulnerable groups, victims of armed conflicts and natural disasters and to protect their dignity and rights in a manner that preserves their lives, safety, security and well-being. The Society direction focuses on Strategy 2020 of the International Federation of Red Cross and Red Crescent Societies, which has the strategic aims: To save lives, protect livelihoods, and strengthen recovery from disasters and crisis. To enable healthy and safe living. To promote social inclusion and a culture of non-violence and peace.        
                     <br>
                     <b><u>Volunteer Opportunities</u></b>: Donation                    
-                    <a href="volunteer_form.html"><button class="but_opp">Apply to Volunteer</button></a>
+                    <button class="but_opp" onclick="openForm()">Apply to Volunteer</button>
                 </div>                
-            </div>
-            
+            </div>            
+        </div>
+        
+        
+        <div class="form_vol" id="myForm">
+            <h2>Volunteer Ambassadors Form</h2>
+            <form action="/action_page.php">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="names">Names (First and Lastnames)<span class="require">*</span></label>
+                        </td>
+                        <td>
+                            <input class="text" type="text" id="names" name="names" placeholder="Your names...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="address">Address (Road, City, County/District)</label>
+                        </td>                        
+                        <td>
+                            <input class="text" type="text" id="address" name="address" placeholder="Your address...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email address <span class="require">*</span></label>
+                        </td>
+                        <td>
+                            <input class="text" type="text" id="email" name="email" placeholder="Your email...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phone">Phone number</label>
+                        </td>
+                        <td>
+                            <input class="text" type="text" id="phone" name="phone" placeholder="Your phone...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="address">Country <span class="require">*</span></label>
+                        </td>                        
+                        <td>
+                            <select class="text" id="countries_form" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="algeria">Algeria</option>
+                                <option value="canada">Canada</option>
+                                <option value="china">China</option>
+                                <option value="germany">Germany</option>
+                                <option value="japan">Japan</option>
+                                <option value="jordan">Jordan</option>
+                                <option value="kenya">Kenya</option>
+                                <option value="malesia">Malesia</option>
+                                <option value="spain">Spain</option>
+                                <option value="sa">South Africa</option>
+                                <option value="uganda">Uganda</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="usa">United State of America</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn_close" onclick="closeForm()">Cancel form</button></td>
+                        <td>
+                            <input class="submit" type="submit" value="submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
         </div>
                 
         <div class="clear_footer_top"></div>
@@ -104,6 +173,6 @@
         <footer>
                 Copyright &copy;2020 VIJ_Global &emsp;&emsp; Powered &#64; Expedia.Inc
         </footer>
-        
+        <script src="popup_form.js"></script>
     </body>
 </html>
